@@ -1,7 +1,7 @@
 import { APIGatewayEvent, APIGatewayProxyCallback, Context } from 'aws-lambda';
 import chromium from 'chrome-aws-lambda';
 import { writeFileSync } from 'fs';
-import { Browser, PDFOptions } from 'puppeteer';
+import { Browser, PDFOptions } from 'puppeteer-core';
 
 export interface Parameters {
     url?: string;
