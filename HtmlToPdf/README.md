@@ -68,7 +68,8 @@ Run functions locally and invoke them with the `sam local invoke` command.
 HtmlToPdf$ sam local invoke HtmlToPdfFunction --event events/event.json
 ```
 
-The SAM CLI can also emulate your application's API. Use the `sam local start-api` to run the API locally on port 3000.
+The SAM CLI can also emulate your application's API. Use the `sam local start-api` to run the API locally on port 3000. 
+Use `--warm-containers=EAGER` to prevent rebuiling lambda layers on every invoke.
 
 ```bash
 HtmlToPdf$ sam local start-api
